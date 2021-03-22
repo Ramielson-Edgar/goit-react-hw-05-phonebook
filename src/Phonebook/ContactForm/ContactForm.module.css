@@ -1,0 +1,80 @@
+.form {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 350px;
+    background-color:#4044c9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 16px 19px 45px rgba(33, 36, 125, 0.3);
+}
+
+.inputName::placeholder, .inputNumber::placeholder {
+    font-size: 12px;
+    padding-left: 8px;
+
+   
+}
+
+.inputContainer {
+    position: absolute;
+    transform: translate(0%,0%);
+}
+
+.hedaline {
+    color: white;
+}
+
+.inputName, .inputNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    outline-color: #4044c9;
+   
+   
+}
+
+.inputNumber {
+    margin-bottom: 10px;
+}
+
+.inputName {
+    margin-bottom: 10px;
+}
+
+.btn {
+ width: 300px;
+ height: 60px;
+ border-radius: 5px;
+color: white;
+background-color: #3EBD93;
+cursor: pointer;
+border: none;
+outline: none;
+ transition: 0.3s ease-in;
+
+}
+.btn:hover {
+    box-shadow: 10px 16px 30px #2e866955;
+    transition: 0.3s ease-in;
+}
+.labelName, .labelNumber {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 10px;   
+}
+
+ 

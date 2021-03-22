@@ -1,0 +1,30 @@
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+   border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    outline-color: #4044C9;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    background-color:#4044c9;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 8px 10px 30px rgba(33, 36, 125, 0.2);
+}
+
+.subtitle {
+    color: white;
+    font-size: 18px;
+}
