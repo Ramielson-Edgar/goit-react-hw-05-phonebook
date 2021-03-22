@@ -2,15 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './IconButtonDelete.module.css';
 
-const IconButtonDelete = ({ id, children, onRemove, ...rest }) => {
+const IconButtonDelete = ({ id, children, onRemove }) => {
   return (
     <div>
-      <button
-        className={s.btn}
-        type="delete"
-        onClick={() => onRemove(id)}
-        {...rest}
-      >
+      <button className={s.btn} type="delete" onClick={() => onRemove(id)}>
         {children}
       </button>
     </div>

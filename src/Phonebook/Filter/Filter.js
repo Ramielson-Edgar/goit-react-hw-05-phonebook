@@ -5,9 +5,10 @@ import s from './Filter.module.css';
 import Appearances from '../Filter/FilterAppearances.module.css';
 
 const Filter = ({ value, handleChangeFilter, contacts }) => {
+  console.log(contacts.length);
   return (
     <>
-      {contacts.length > 0 && (
+      {contacts.length > 1 && (
         <CSSTransition
           in={contacts.length > 1}
           timeout={250}

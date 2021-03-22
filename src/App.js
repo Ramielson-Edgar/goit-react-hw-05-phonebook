@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../src/bases.css';
 import shortid from 'shortid';
 import ContactForm from './Phonebook/ContactForm';
 import ContactList from './Phonebook/ContactList';
 import Filter from './Phonebook/Filter';
 import MyPnotify from './Phonebook/MyPnotify/MyPnotify';
-import { CSSTransition } from 'react-transition-group';
-import './Alert.css';
 import Container from './Container';
+import '../src/bases.css';
+import './Alert.css';
 
 class App extends Component {
   state = {
@@ -88,9 +87,8 @@ class App extends Component {
     return (
       <>
         <MyPnotify className={className} hideAlert={hideAlert} />
-
         <Container>
-          <ContactForm addContact={this.addContact} />
+          <ContactForm addcontact={this.addContact} />
 
           <Filter
             contacts={contacts}

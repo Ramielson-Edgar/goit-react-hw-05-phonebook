@@ -22,7 +22,7 @@ class ContactForm extends Component {
   handleSubmit = evt => {
     evt.preventDefault();
 
-    this.props.addContact({ ...this.state });
+    this.props.addcontact({ ...this.state });
     this.reset();
   };
 

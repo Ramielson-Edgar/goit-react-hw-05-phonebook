@@ -7,32 +7,33 @@ import IconButtonDelete from '../IconButton/IconButton';
 import { ReactComponent as IconDelete } from '../IconButton/svg/Delete.svg';
 
 const ContactList = ({ contacts, onRemove }) => {
-  console.log(contacts.length);
   return (
-    <TransitionGroup component="ul" className={s.list}>
-      {contacts.map(({ id, name, number }) =>
-        contacts.length === 4 ? null : (
-          <CSSTransition
-            key={id}
-            timeout={250}
-            classNames={slide}
-            unmountOnExit
-          >
-            <li key={id} className={s.item}>
-              <strong>{name}</strong>
-              <p>{number}</p>
-              <IconButtonDelete
-                id={id}
-                onRemove={onRemove}
-                arial-lable="delete-contacts"
-              >
-                <IconDelete width="16" height="16" fill="white" />
-              </IconButtonDelete>
-            </li>
-          </CSSTransition>
-        ),
+    <>
+      {contacts.length > 0 && (
+        <TransitionGroup component="ul" className={s.list}>
+          {contacts.map(({ id, name, number }) => (
+            <CSSTransition
+              key={id}
+              timeout={250}
+              classNames={slide}
+              unmountOnExit
+            >
+              <li key={id} className={s.item}>
+                <strong>{name}</strong>
+                <p>{number}</p>
+                <IconButtonDelete
+                  id={id}
+                  onRemove={onRemove}
+                  arial-lable="delete-contacts"
+                >
+                  <IconDelete width="16" height="16" fill="white" />
+                </IconButtonDelete>
+              </li>
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
       )}
-    </TransitionGroup>
+    </>
   );
 };
 
